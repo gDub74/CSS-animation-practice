@@ -48,7 +48,7 @@ body {
         transform: translateX(100px) translateY(-100px);
         opacity: 0.7;
         }
-    99%{
+    95%{
         transform: translateX(230px) translateY(-100px);
         opacity: 1;
         }
