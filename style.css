@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    font-family: 'Montserrat'
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    animation: yourAnimation 2s forwards 0s ease-in;
+}
+
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(45deg) scale(0.5) translateY(-300px) skewX(10deg) skewY(-10deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0) translateX(700px);
+        opacity: 1;
+    }
+}
+
+.text {
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: textAnimation 1.5s forwards 2s ease-in;
+}
+
+@keyframes textAnimation{
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+        }
+    23%{
+        transform: translateY(-200px);
+        opacity: 0.3;
+        }
+    65%{
+        transform: translateX(100px) translateY(-100px);
+        opacity: 0.7;
+        }
+    99%{
+        transform: translateX(230px) translateY(-100px);
+        opacity: 1;
+        }
+    100%{
+        transform: translateX(220px) translateY(-100px);
+        opacity: 1;
+        }
+}
